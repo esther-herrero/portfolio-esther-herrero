@@ -1,0 +1,33 @@
+.menuContainer {
+    display: flex;
+    margin: 5rem auto;
+
+    .sidebar {
+        width: 200px;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+
+    .main-content {
+        flex-grow: 1;
+        padding: 20px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 51rem;
+    }
+
+    table, th, td {
+        border: 1px solid #ccc;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: left;
+    }
+
+    .userProfile {
+        margin-top: 2rem;
+    }
+}

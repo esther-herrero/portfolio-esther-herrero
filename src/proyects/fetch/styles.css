@@ -1,0 +1,190 @@
+.apiContainer {
+  display: flex;
+  flex-direction: row;
+
+  .post-it {
+    background-color: #ffeb3b;
+    width: 300px;
+    padding: 1rem;
+    font-family: 'Arial', sans-serif;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 7px 6px 14px 4px rgba(0, 0, 0, 0.2);
+    margin: 10rem 3rem 1rem 5rem;
+    position: relative;
+    transform: rotate(-3deg);
+    height: 22rem;
+  }
+
+  .post-it p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+  }
+
+  .apiContainer1 {
+    width: 58%;
+    margin: 0 auto;
+    padding: 8rem 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      gap: 1rem;
+    }
+
+    .apiDiv {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+    }
+
+    .apiInput {
+      display: flex;
+      flex-direction: column;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 30rem; /* Altura fija */
+      overflow-y: auto; /* Scroll vertical */
+      border: 1px solid #ddd; /* Opcional: borde para hacer visible el área de scroll */
+      border-radius: 5px;
+    }
+
+    li {
+      background-color: #f9f9f9;
+      margin: 10px;
+      padding: 15px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+    }
+
+    li strong {
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    li:hover {
+      background-color: #f0f0f0;
+      cursor: pointer;
+    }
+
+    /* Estilo del formulario */
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #555;
+    }
+
+    input[type="text"], textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+
+    textarea {
+      resize: vertical;
+      height: 100px;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: #007bff;
+      border: none;
+      color: white;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 11rem;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Cargando y error */
+
+    p {
+      text-align: center;
+      color: #777;
+    }
+
+    p.error {
+      color: red;
+      font-weight: bold;
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      margin: auto;
+    }
+
+    .double-bounce1, .double-bounce2 {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #007bff;
+      opacity: 0.6;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: bounce 2s infinite ease-in-out;
+    }
+
+    .double-bounce2 {
+      animation-delay: -1s;
+    }
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .post-it {
+      margin: 5rem auto;
+      width: 79%;
+      height: 24rem;
+    }
+    .apiContainer1 {
+      width: 90%;
+      padding: 2rem;
+      div {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .apiContainer {
+    flex-direction: column;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}

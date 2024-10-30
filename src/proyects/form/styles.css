@@ -1,0 +1,57 @@
+.form-container {
+    max-width: 400px;
+    margin: 8rem auto 2rem auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 19px 0px rgb(191 191 191 / 99%);
+
+    .input-field,
+    .date-field,
+    .select-field {
+        margin-bottom: 1rem;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 0.5rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 0.75rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .error-message {
+        color: red;
+        font-size: 0.85em;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .form-container  {
+        margin: 4rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .confirmation {
+        margin: 4rem 1rem !important;
+    }
+}

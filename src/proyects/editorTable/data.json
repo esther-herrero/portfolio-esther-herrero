@@ -1,0 +1,5 @@
+[
+  { "id": "fdbe596c-0a2f-4a2e-8a3f-a636db8d4a33", "name": "Juan", "age": 25, "country": "Spain" },
+  { "id": "4c049dc2-59e2-4a98-a68a-931f44f55e1f", "name": "Ana", "age": 30, "country": "Mexico" },
+  { "id": "da9d357e-e85e-4904-ac17-4ca35f2a2afc", "name": "Luis", "age": 22, "country": "Argentina" }
+]
