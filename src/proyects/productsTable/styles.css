@@ -1,92 +1,105 @@
-
 .tableContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin:  5rem auto;
+  margin: 5rem auto;
   padding: 3rem;
   width: 50%;
 
   form {
     display: flex;
     gap: 2rem;
+    
+    input[type="checkbox"] {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+    input[type="checkbox"]:checked {
+      background-color: #ffffff;
+      border-color: #000000;
+      position: relative;
+    }
+    
+    input[type="checkbox"]:checked::before {
+      content: '✔';
+      color: #000000;
+      position: absolute;
+      top: -2px;
+      left: 2px;
+      font-size: 14px;
+    }
   }
 
   table {
     width: 100%;
-    border-collapse: collapse; /* Elimina el espacio entre bordes */
-    margin: 20px 0; /* Margen superior e inferior */
-    font-family: Arial, sans-serif; /* Fuente para la tabla */
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
   }
 
-  /* Estilos de las cabeceras de la tabla */
   th {
-    background-color: #396898; /* Color de fondo azul */
-    color: white; /* Color del texto en blanco */
-    padding: 12px; /* Espaciado interno */
-    text-align: left; /* Alineación a la izquierda */
-    font-weight: bold; /* Texto en negrita */
+    background-color: #396898;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
   }
 
-  /* Estilos de las celdas de la tabla */
   td {
-    padding: 12px; /* Espaciado interno */
-    border-bottom: 1px solid #ddd; /* Línea divisoria en la parte inferior */
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
   }
 
-  /* Efecto hover para las filas de la tabla */
   tr:hover {
-    background-color: #f1f1f1; /* Color de fondo al pasar el ratón */
+    background-color: #f1f1f1;
   }
 
-  /* Estilo para las filas impares */
   tr:nth-child(odd) {
-    background-color: #f9f9f9; /* Color de fondo para filas impares */
+    background-color: #f9f9f9;
   }
 
-  /* Estilo para las filas pares */
   tr:nth-child(even) {
-    background-color: #ffffff; /* Color de fondo para filas pares */
+    background-color: #ffffff;
   }
 
-  /* Estilo para la tabla cuando no hay datos */
   .table-empty {
-    text-align: center; /* Centrar texto */
-    padding: 20px; /* Espaciado interno */
-    font-style: italic; /* Estilo en cursiva */
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
   }
 
-  /* Estilos para el contenedor de la tabla */
   .table-container {
-    max-width: 1200px; /* Ancho máximo */
-    margin: auto; /* Centrar el contenedor */
-    overflow-x: auto; /* Agregar desplazamiento horizontal si es necesario */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra alrededor del contenedor */
-    border-radius: 8px; /* Bordes redondeados */
+    max-width: 1200px;
+    margin: auto;
+    overflow-x: auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
   }
 
-  /* Opcional: Estilo para botones de acción si los hay */
   .button {
-    padding: 8px 16px; /* Espaciado interno */
-    margin-top: 10px; /* Margen superior */
-    background-color: #007bff; /* Color de fondo del botón */
-    color: white; /* Color del texto en blanco */
-    border: none; /* Sin borde */
-    border-radius: 4px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar el ratón */
+    padding: 8px 16px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
   }
 
   .button:hover {
-    background-color: #0056b3; /* Color de fondo al pasar el ratón */
+    background-color: #0056b3;
   }
-
 }
 
 @media (max-width: 768px) {
   .tableContainer {
     width: 100%;
     margin: 2rem auto;
-    form  {
+    form {
       flex-direction: column;
     }
   }
