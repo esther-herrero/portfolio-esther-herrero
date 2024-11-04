@@ -96,6 +96,7 @@ button:hover {
 button:nth-child(1) {
     border: 3px solid #4caf50; /* Editar */
     color: #000000;
+    background-color: #ffffff;
 }
 
 button:nth-child(2) {
