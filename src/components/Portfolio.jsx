@@ -15,7 +15,7 @@ const Portfolio = () => {
                         <p className="mb-5">Página en construcción. <br/> Iré subiendo pequeños proyectos poco a poco y
                             luego los iré mejorando 💪🏼.</p>
                         <a href="https://esther-herrero.github.io/portfolio-esther-herrero/assets/CV_front_developer_Esther_Rguez_Herrero.pdf"
-                           className="btn btn-primary mb-3"
+                           className="btn btn-success mb-3"
                            target="_blank"
                            rel="noopener noreferrer">
                             Descargar CV
