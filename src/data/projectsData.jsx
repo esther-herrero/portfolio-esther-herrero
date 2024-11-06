@@ -12,6 +12,7 @@ import img11 from '../../public/img/img_11.jpg';
 import img12 from '../../public/img/img_12.jpg';
 import img13 from '../../public/img/img_13.jpg';
 import img14 from '../../public/img/img_14.jpg';
+import img15 from '../../public/img/img_15.jpg';
 
 const projects = [
     {
@@ -19,6 +20,12 @@ const projects = [
         description: "Busca y visualiza GIFs utilizando la API de Giphy. <br /> Ahí está Aloy dándolo todo :)",
         imgSrc: img1,
         link: "gifapp",
+    },
+    {
+        title: "Juego 3 en raya",
+        description: "Prueba el mítico juego de 3 en raya",
+        imgSrc: img15,
+        link: "/app3raya",
     },
     {
         title: "Counter",

@@ -12,7 +12,7 @@ const Portfolio = () => {
                     <div className="content-section-heading text-center portfolio-title">
                         <h2 className="text-secondary mb-3">Proyectos en React, JavaScript, TypeScript, HTML y CSS</h2>
                         <h3 className="mb-3">Portfolio: Esther R. Herrero 🍀</h3>
-                        <p className="mb-5">Página en construcción. <br/> Iré subiendo pequeños proyectos poco a poco y
+                        <p className="mb-3">Página en construcción. <br/> Iré subiendo pequeños proyectos poco a poco y
                             luego los iré mejorando 💪🏼.</p>
                         <a href="https://esther-herrero.github.io/portfolio-esther-herrero/assets/CV_front_developer_Esther_Rguez_Herrero.pdf"
                            className="btn btn-success mb-3"
