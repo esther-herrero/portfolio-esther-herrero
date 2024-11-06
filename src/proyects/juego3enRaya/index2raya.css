@@ -112,7 +112,7 @@
 @media (max-width: 768px) {
   .board {
     margin: 5rem auto;
-    width: 25rem;
+    width: 95%;
     padding: 1rem;
   }
 }
