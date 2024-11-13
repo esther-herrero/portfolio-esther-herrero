@@ -1,0 +1,126 @@
+/* Contenedor principal de la tienda */
+.shop-container {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+}
+
+/* Título principal */
+.shop-container h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+}
+
+/* Botones de navegación (Catálogo, Carrito) */
+.shop-container button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.shop-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos generales para las secciones */
+.product-list, .cart {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Estilos para cada producto en el catálogo */
+.product-card {
+  display: inline-block;
+  width: 200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.product-card button {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.product-card button:hover {
+  background-color: #218838;
+}
+
+/* Estilos del carrito */
+.cart {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.cart .cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart .cart-item h4 {
+  font-size: 1.1rem;
+}
+
+.cart .cart-item p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.cart button {
+  background-color: #dc3545;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart button:hover {
+  background-color: #c82333;
+}

@@ -18,6 +18,8 @@ import Listado from "./proyects/renderizadoListas/RenderizadoListas.jsx";
 import ToogleBlackWhite from "./proyects/toggleBlackWhite/ToogleBlackWhite.jsx";
 import TableProyect from "./proyects/editorTable/Table.jsx";
 import App3raya from "./proyects/juego3enRaya/App3raya.jsx";
+import AppMouse from "./proyects/mouseFollowerUseEffect/AppMouse.jsx";
+import Shop from "./proyects/tienda/Shop.jsx";
 
 const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -40,8 +42,10 @@ const App = () => {
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/gifapp" element={<GifApp />} />
                 <Route path="/app3raya" element={<App3raya />} />
+                <Route path="/appMouse" element={<AppMouse />} />
                 <Route path="/counter" element={<Counter />} />
                 <Route path="/autocomplete" element={<Autocomplete />} />
+                <Route path="/shop" element={<Shop />} />
                 <Route path="/apiExample" element={<ApiExample />} />
                 <Route path="/form" element={<FormContainer />} />
                 <Route path="/form-confirmation" element={<FormConfirmation />} />

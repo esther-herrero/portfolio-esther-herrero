@@ -13,6 +13,7 @@ import img12 from '../../public/img/img_12.jpg';
 import img13 from '../../public/img/img_13.jpg';
 import img14 from '../../public/img/img_14.jpg';
 import img15 from '../../public/img/img_15.jpg';
+import img16 from '../../public/img/img_16.jpg';
 
 const projects = [
     {
@@ -26,6 +27,12 @@ const projects = [
         description: "Prueba el mítico juego de 3 en raya",
         imgSrc: img15,
         link: "/app3raya",
+    },
+    {
+        title: "Pointer en el mouse. Posicionamiento",
+        description: "Puntero con eje x e y que sigue al mouse, usando useEffect",
+        imgSrc: img16,
+        link: "/appMouse",
     },
     {
         title: "Counter",
@@ -82,10 +89,10 @@ const projects = [
         link: "/tableProyect",
     },
     {
-        title: "Workspace 6",
-        description: "En construcción!  <br />  Estoy en ello, en unos días subo proyecto :)",
+        title: "Tienda",
+        description: "... <br /> ... ",
         imgSrc: img11,
-        link: "/workspace",
+        link: "/shop",
     },
     {
         title: "Workspace 7",
