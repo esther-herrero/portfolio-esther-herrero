@@ -90,15 +90,15 @@ const projects = [
     },
     {
         title: "Tienda",
-        description: "... <br /> ... ",
+        description: " <br />  ",
         imgSrc: img11,
         link: "/shop",
     },
     {
-        title: "Workspace 7",
-        description: "En construcción!  <br />  Estoy en ello, en unos días subo proyecto :)",
+        title: "Gestor Tareas",
+        description: " <br />  ",
         imgSrc: img12,
-        link: "/workspace",
+        link: "/gestorTareas",
     },
     {
         title: "Workspace 8",

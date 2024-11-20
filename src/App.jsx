@@ -20,6 +20,7 @@ import TableProyect from "./proyects/editorTable/Table.jsx";
 import App3raya from "./proyects/juego3enRaya/App3raya.jsx";
 import AppMouse from "./proyects/mouseFollowerUseEffect/AppMouse.jsx";
 import Shop from "./proyects/tienda/Shop.jsx";
+import GestorTareas from "./proyects/gestorTareas/gestorTareas.jsx";
 
 const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -46,6 +47,7 @@ const App = () => {
                 <Route path="/counter" element={<Counter />} />
                 <Route path="/autocomplete" element={<Autocomplete />} />
                 <Route path="/shop" element={<Shop />} />
+                <Route path="/gestorTareas" element={<GestorTareas />} />
                 <Route path="/apiExample" element={<ApiExample />} />
                 <Route path="/form" element={<FormContainer />} />
                 <Route path="/form-confirmation" element={<FormConfirmation />} />
