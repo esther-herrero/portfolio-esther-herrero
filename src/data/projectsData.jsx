@@ -14,6 +14,7 @@ import img13 from '../../public/img/img_13.jpg';
 import img14 from '../../public/img/img_14.jpg';
 import img15 from '../../public/img/img_15.jpg';
 import img16 from '../../public/img/img_16.jpg';
+import img17 from '../../public/img/img_17.jpg';
 
 const projects = [
     {
@@ -33,6 +34,12 @@ const projects = [
         description: "Puntero con eje x e y que sigue al mouse, usando useEffect",
         imgSrc: img16,
         link: "/appMouse",
+    },
+    {
+        title: "Ejemplo con createContext y Provider",
+        description: "Implementación de un sistema de temas con React utilizando Context y customs hooks para gestionar y alternar entre temas claros y oscuros.",
+        imgSrc: img17,
+        link: "/createContext",
     },
     {
         title: "Counter",

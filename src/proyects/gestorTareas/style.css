@@ -1,24 +1,40 @@
 .gestor {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #f4f4f9;
-    padding: 20px;
-    div {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    /* height: 100vh; */
+    /* background-color: #f4f4f9; */
+    /* padding: 20px; */
+    margin: 7rem 1rem 5rem 1rem;
 }
 
-h1 {
+.gestor > div  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.gestor > div > div  {
+    display: flex;
+    flex-direction: row;
+}
+
+.gestor > div.table {
+    width: 40rem;
+    border: 1px solid #636363;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+}
+
+.gestor h4 {
     color: #333;
 }
 
-input, select, button {
+.gestor input,
+.gestor select,
+.gestor button {
     padding: 10px;
     margin: 10px;
     border-radius: 4px;
@@ -26,49 +42,83 @@ input, select, button {
     font-size: 14px;
 }
 
-select {
+.gestor select {
     background-color: #fff;
     cursor: pointer;
 }
 
-button {
+.gestor button {
     background-color: #4caf50;
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-button:hover {
+.gestor button:hover {
     background-color: #45a049;
 }
 
-.category {
+.gestor .category {
     margin-top: 20px;
     width: 100%;
+    justify-content: space-around;
     text-align: center;
+    align-items: center;
+    border: 1px solid #a7a7a7;
+    h5 {
+        margin: 0.5rem;
+    }
 }
 
-ul {
-    list-style-type: none;
+.gestor ol {
+    width: 16rem;
+    list-style-type: auto;
     padding: 0;
+    margin: 0.5rem;
 }
 
-li {
+.gestor li {
     background-color: #ffffff;
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 0px 9px;
+    margin: 0.25rem;
     border-radius: 4px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 2rem;
 }
 
-li button {
+.gestor li button {
     background-color: #f44336;
     color: white;
     cursor: pointer;
+    transition: background-color 0.3s;
+    height: 2rem;
+    display: flex;
+    align-items: center;
 }
 
-li button:hover {
+.gestor li button:hover {
     background-color: #e53935;
+}
+
+@media (max-width: 768px) {
+    .gestor {
+        flex-direction: column;
+        height: auto;
+        margin: 5rem 0.5rem 5rem 0.5rem;
+    }
+
+    .gestor > div > div {
+        flex-direction: column;
+    }
+
+    .gestor > div.table {
+        width: 90%;
+    }
+
+    .gestor ol {
+        width: 100%;
+    }
 }

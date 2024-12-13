@@ -19,6 +19,7 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+    width: 90%;
 }
 
 .container-card {
@@ -38,7 +39,7 @@
 .card-text {
     background-color: #000000d1;
     border-radius: 11px;
-    padding: 0.25rem 0.5rem;
+    padding: 1rem;
 }
 
 .navbar-container {

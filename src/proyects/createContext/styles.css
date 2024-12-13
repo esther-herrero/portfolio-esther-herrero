@@ -1,0 +1,110 @@
+.containerContext {
+    display: flex;
+    flex-direction: column;
+    margin: 7rem 2rem 1rem 2rem;
+    justify-content: center;
+    align-items: center;
+
+    .containerRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 2rem;
+        width: 100%;
+
+        h3 {
+            width: 20rem;
+        }
+        button {
+            width: 13rem;
+        }
+
+        .accordion {
+            width: 50%;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .accordion-item {
+            margin-bottom: 10px;
+        }
+
+        .accordion-header {
+            cursor: pointer;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-content {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .arrow {
+            transition: transform 0.3s ease;
+        }
+
+        .arrow-down {
+            transform: rotate(0deg);
+        }
+
+        .arrow-up {
+            transform: rotate(180deg);
+        }
+
+        .theme-container {
+            width: 50%;
+            padding: 20px;
+        }
+
+        .theme-button {
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .theme-button:hover {
+            background-color: #0056b3;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .containerContext {
+        margin: 5rem 0.5rem 1rem 0.5rem;
+        width: 100%;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .containerRow {
+        flex-direction: column !important;
+        margin: 1rem 0.5rem 1rem 0.5rem;
+        width: 100%;
+    }
+
+    .accordion, .theme {
+        width: 100% !important;
+    }
+    .theme {
+        padding: 3rem !important;
+    }
+
+}

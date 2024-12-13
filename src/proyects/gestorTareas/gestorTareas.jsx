@@ -11,53 +11,55 @@ function GestorTareas() {
 
     const addTask = () => {
         if (task.trim() && category.trim()) {
-            setTasks([...tasks, { task, category }]);
+            setTasks([...tasks, { id: Date.now(), task, category }]);
             setTask("");
             setCategory("");
         }
     };
 
-    const deleteTask = (index) => {
-        setTasks(tasks.filter((_, i) => i !== index));
+    const deleteTask = (id) => {
+        setTasks(tasks.filter((task) => task.id !== id));
     };
 
-    const categories = ["Work", "Personal", "Study", "Other"]; // Predefined categories
+    const categories = ["Trabajo", "Personal", "Estudio", "Lista compra", "Deporte", "Hogar", "Estudio", "Viajes",  "Otros"]; // Predefined categories
 
     return (
         <div className="gestor">
             <div>
-                <h1>Task Manager</h1>
+                <h4>Gestor de Tareas</h4>
+                <div>
                 <input
                     type="text"
                     value={task}
                     onChange={handleTaskChange}
-                    placeholder="Enter a task"
+                    placeholder="Introduce una tarea"
                 />
                 <select value={category} onChange={handleCategoryChange}>
-                    <option value="">Select category</option>
+                    <option value="">Agrégala a una categoría!</option>
                     {categories.map((categoryName, index) => (
                         <option key={index} value={categoryName}>
                             {categoryName}
                         </option>
                     ))}
                 </select>
-                <button onClick={addTask}>Add Task</button>
+                <button onClick={addTask}>Agregar tarea</button>
+                    </div>
             </div>
 
-            <div>
-                {categories.map((categoryName, index) => (
-                    <div key={index} className="category">
+            <div className="table">
+                {categories.map((categoryName) => (
+                    <div key={categoryName} className="category">
                         <h5>{categoryName}</h5>
-                        <ul>
+                        <ol>
                             {tasks
                                 .filter((task) => task.category === categoryName)
-                                .map((task, i) => (
-                                    <li key={i}>
+                                .map((task) => (
+                                    <li key={task.id}>
                                         {task.task}
-                                        <button onClick={() => deleteTask(i)}>Delete</button>
+                                        <button onClick={() => deleteTask(task.id)}>Delete</button>
                                     </li>
                                 ))}
-                        </ul>
+                        </ol>
                     </div>
                 ))}
             </div>
