@@ -22,6 +22,7 @@ import AppMouse from "./proyects/mouseFollowerUseEffect/AppMouse.jsx";
 import Shop from "./proyects/tienda/Shop.jsx";
 import GestorTareas from "./proyects/gestorTareas/gestorTareas.jsx";
 import {CreateContextPage} from "./proyects/createContext/createContext.jsx";
+import Pagination from "./proyects/pagination/Pagination.jsx";
 
 const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -48,6 +49,7 @@ const App = () => {
                 <Route path="/appMouse" element={<AppMouse />} />
                 <Route path="/counter" element={<Counter />} />
                 <Route path="/autocomplete" element={<Autocomplete />} />
+                <Route path="/pagination" element={<Pagination />} />
                 <Route path="/shop" element={<Shop />} />
                 <Route path="/gestorTareas" element={<GestorTareas />} />
                 <Route path="/apiExample" element={<ApiExample />} />

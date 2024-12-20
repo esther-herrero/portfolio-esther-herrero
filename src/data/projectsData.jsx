@@ -15,6 +15,7 @@ import img14 from '../../public/img/img_14.jpg';
 import img15 from '../../public/img/img_15.jpg';
 import img16 from '../../public/img/img_16.jpg';
 import img17 from '../../public/img/img_17.jpg';
+import img18 from '../../public/img/img_18.jpg';
 
 const projects = [
     {
@@ -46,6 +47,12 @@ const projects = [
         description: "Un pequeño y rápido contador. <br />Incrementa, decrementa y resetea!",
         imgSrc: img2,
         link: "/counter",
+    },
+    {
+        title: "Paginación",
+        description: "dddd",
+        imgSrc: img18,
+        link: "/pagination",
     },
     {
         title: "Autocomplete",
