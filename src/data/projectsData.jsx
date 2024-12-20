@@ -50,7 +50,7 @@ const projects = [
     },
     {
         title: "Paginación",
-        description: "dddd",
+        description: "Ejemplo con un listado de 100 items<br />donde se muestran 10 elementos por página",
         imgSrc: img18,
         link: "/pagination",
     },
