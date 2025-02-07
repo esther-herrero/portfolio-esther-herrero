@@ -34,6 +34,11 @@ const Contact = () => {
                                         <p>Linkedin</p>
                                     </a>
                                 </div>
+                                <div>
+                                    <a href="https://www.instagram.com/esther_ludosport/" target="_blank" rel="noopener noreferrer">
+                                        <p>Instagram: Esther_LudoSport</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
