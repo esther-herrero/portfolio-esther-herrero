@@ -23,6 +23,7 @@ import Shop from "./proyects/tienda/Shop.jsx";
 import GestorTareas from "./proyects/gestorTareas/gestorTareas.jsx";
 import {CreateContextPage} from "./proyects/createContext/createContext.jsx";
 import Pagination from "./proyects/pagination/Pagination.jsx";
+import ProjectHomer from "./proyects/losSimpsons/lossimpsons.jsx";
 
 const ScrollToTop = () => {
     const { pathname } = useLocation();
@@ -60,6 +61,7 @@ const App = () => {
                 <Route path="/listado" element={<Listado />} />
                 <Route path="/toggleBlackWhite" element={<ToogleBlackWhite />} />
                 <Route path="/tableProyect" element={<TableProyect />} />
+                <Route path="/lossimpsons" element={<ProjectHomer />} />
             </Routes>
         </Router>
     );

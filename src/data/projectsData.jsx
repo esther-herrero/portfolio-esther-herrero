@@ -16,6 +16,7 @@ import img15 from '../../public/img/img_15.jpg';
 import img16 from '../../public/img/img_16.jpg';
 import img17 from '../../public/img/img_17.jpg';
 import img18 from '../../public/img/img_18.jpg';
+import homer from '../../public/img/homer.webp';
 
 const projects = [
     {
@@ -35,6 +36,12 @@ const projects = [
         description: "Puntero con eje x e y que sigue al mouse, usando useEffect",
         imgSrc: img16,
         link: "/appMouse",
+    },
+    {
+        title: "Siempre quise hacer esto 🤭",
+        description: "Los Simpson",
+        imgSrc: homer,
+        link: "lossimpsons",
     },
     {
         title: "Ejemplo con createContext y Provider",
