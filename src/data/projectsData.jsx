@@ -111,13 +111,13 @@ const projects = [
     },
     {
         title: "Tienda",
-        description: " <br />  ",
+        description: "En construcción!  <br />  Estoy en ello, en unos días subo proyecto :)",
         imgSrc: img11,
         link: "/shop",
     },
     {
         title: "Gestor Tareas",
-        description: " <br />  ",
+        description: "En construcción!  <br />  Estoy en ello, en unos días subo proyecto :)",
         imgSrc: img12,
         link: "/gestorTareas",
     },

@@ -8,7 +8,7 @@ const Portfolio = () => {
     return (
         <>
             <section className="content-section bg-light section-margin" id="portfolio">
-                <div className="container px-4 px-lg-5">
+                <div className="container container-width px-4 px-lg-5">
                     <div className="content-section-heading text-center portfolio-title">
                         <h2 className="text-secondary mb-3">Proyectos en React, JavaScript, TypeScript, HTML y CSS</h2>
                         <h3 className="mb-3">Portfolio: Esther R. Herrero 🍀</h3>
@@ -25,7 +25,7 @@ const Portfolio = () => {
 
                     <div className="row gx-4 gx-lg-5">
                         {projects.map((project, index) => (
-                            <div className="col-lg-6 col-md-6 container-card" key={index}>
+                            <div className="col-lg-4 col-md-6 col-sm-12 container-card" key={index}>
                                 <h5 className="card-title">{project.title}</h5>
                                 <Link to={project.link} className="card h-100 position-relative overflow-hidden">
                                     <div
